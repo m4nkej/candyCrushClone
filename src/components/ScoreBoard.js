@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const ScoreBoard = ({score}) => {
+const ScoreBoard = ({ score }) => {
     return (
         <div className="score-board">
             <h2>{score}</h2>

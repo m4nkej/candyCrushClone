@@ -1,16 +1,54 @@
-.app{
-  display: flex;
+.app {
+  display: grid;
   padding: 20px;
 }
 
-.game{
+.game {
   display: flex;
   flex-wrap: wrap;
   width: 560px;
   height: 560px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.game img{
+.game img {
   width: 70px;
   height: 70px;
+}
+
+.score-board {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.score-board h2 {
+  margin: 0;
+
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+body {
+  background: linear-gradient(-45deg, #ece6b2, #ddb6c5, #7bc5e0, #95dbcb);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
